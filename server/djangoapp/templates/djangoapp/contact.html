@@ -35,26 +35,6 @@
                     </li>
                 </ul>
             </div>
-            <!-- <ul class="nav navbar-nav navbar-right">
-                {% if user.is_authenticated %}
-                <li>
-                    <a class="btn btn-link" href="#">{{ user.first_name }}({{ user.username }})</a>
-                    <a class="btn btn-link" href="{% url 'djangoapp:logout' %}">Logout</a>
-                </li>
-                {% else %}
-                <li>
-                    <form class="form-inline" action="{% url 'djangoapp:login' %}" method="post">
-                        {% csrf_token %}
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Username" name="username" >
-                            <input type="password" class="form-control" placeholder="Password" name="psw" >
-                            <button class="btn btn-primary" type="submit">Login</button>
-                            <a class="btn btn-link" href="{% url 'djangoapp:registration' %}">Sign Up</a>
-                        </div>
-                    </form>
-                </li>
-                {% endif %}
-            </ul> -->
         </div>
     </nav>
 
@@ -65,7 +45,25 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <address>
+                    <p><strong>Lord Harambe Dealership</strong></p>
+                    <p>1234 Main Street</p>
+                    <p>New York City</p>
+                </address>
 
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> <a href="mailto:info@yourdealership.com">lordandsavior@harambe.com</a></p>
+
+                <p><strong>Hours of Operation:</strong></p>
+                <p>Monday-Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+    </div>
     </body>
 
 </html>
